@@ -10,15 +10,9 @@
         return (
             <HelmetProvider>
                 <div>
-                    {/* Navbar einmal für die ganze App */}
-                    <Navbar />
-
                     <Routes>
                         {/* Homepage Route */}
                         <Route path="/" element={<Homepage />} />
-
-                        {/* Course Detail Route mit Parameter */}
-                        <Route path="/course/:courseSlug" element={<CourseDetailPage />} />
                     </Routes>
                 </div>
             </HelmetProvider>
