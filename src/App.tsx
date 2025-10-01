@@ -1,21 +1,14 @@
-    import React from 'react';
-    import { Route, Routes } from "react-router-dom";
-    import { HelmetProvider } from "@vuer-ai/react-helmet-async";
-    import Navbar from "./components/Homepage/Navbar.tsx";
-    import Homepage from "./components/Homepage.tsx";
-    import CourseDetailPage from "./components/Homepage/CourseDetailPage.tsx";
+ import { Route, Routes } from "react-router-dom";
     import './index.css';
+    import Homepage from "./components/Homepage.tsx";
 
     function App() {
         return (
-            <HelmetProvider>
                 <div>
                     <Routes>
-                        {/* Homepage Route */}
-                        <Route path="/" element={<Homepage />} />
+                        <Route path={"/"} element={<Homepage></Homepage>}></Route>
                     </Routes>
                 </div>
-            </HelmetProvider>
         );
     }
 
