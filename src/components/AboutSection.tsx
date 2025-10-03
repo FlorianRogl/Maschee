@@ -22,7 +22,7 @@ const AboutSection = () => {
                     <div className="space-y-6 order-1 md:order-2">
                         <div>
                             <p className="text-amber-700 font-light tracking-widest text-xs md:text-sm mb-3">IHRE SCHNEIDERIN MIT HERZ</p>
-                            <h3 className="text-3xl md:text-4xl font-light mb-6 text-gray-800">Servus, ich bin Marlene</h3>
+                            <h3 className="text-3xl md:text-4xl font-light mb-6 text-gray-800">Servus, ich bin Martina</h3>
                             <div className="w-16 h-0.5 bg-amber-400 mb-6"></div>
                         </div>
 
