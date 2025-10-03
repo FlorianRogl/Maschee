@@ -1,12 +1,18 @@
-// Gallery Section
+import kollektion1 from '../assets/Kollektion1.jpg';
+import kollektion2 from '../assets/Kollektion2.jpg';
+import kollektion3 from '../assets/Kollektion3.jpg';
+import kollektion4 from '../assets/Kollektion4.jpg';
+import kollektion5 from '../assets/Kollektion5.jpg';
+import kollektion6 from '../assets/Kollektion6.jpg';
+
 const GallerySection = () => {
     const products = [
-        { img: 'src/assets/Kollektion1.jpg', title: 'Elegante Abendmode', category: 'Maßanfertigung' },
-        { img: 'src/assets/Kollektion2.jpg', title: 'Brautkleid Kollektion', category: 'Hochzeit' },
-        { img: 'src/assets/Kollektion3.jpg', title: 'Business Eleganz', category: 'Business' },
-        { img: 'src/assets/Kollektion4.jpg', title: 'Sommer Kollektion', category: 'Kollektion' },
-        { img: 'src/assets/Kollektion5.jpg', title: 'Vintage Redesign', category: 'Upcycling' },
-        { img: 'src/assets/Kollektion6.jpg', title: 'Festliche Tracht', category: 'Tradition' }
+        { img: kollektion1, title: 'Elegante Abendmode', category: 'Maßanfertigung' },
+        { img: kollektion2, title: 'Brautkleid Kollektion', category: 'Hochzeit' },
+        { img: kollektion3, title: 'Business Eleganz', category: 'Business' },
+        { img: kollektion4, title: 'Sommer Kollektion', category: 'Kollektion' },
+        { img: kollektion5, title: 'Vintage Redesign', category: 'Upcycling' },
+        { img: kollektion6, title: 'Festliche Tracht', category: 'Tradition' }
     ];
 
     return (
@@ -45,4 +51,5 @@ const GallerySection = () => {
         </section>
     );
 };
+
 export default GallerySection;

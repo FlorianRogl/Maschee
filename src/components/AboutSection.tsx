@@ -1,5 +1,7 @@
 import {Award, Heart, Leaf, Quote} from "lucide-react";
 
+import aboutMePic from '../assets/DasBinIch.jpg';
+
 const AboutSection = () => {
     return (
         <section id="about" className="py-16 md:py-24 bg-gradient-to-b from-amber-50/30 to-white">
@@ -8,7 +10,7 @@ const AboutSection = () => {
                     <div className="relative group order-2 md:order-1">
                         <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full bg-gradient-to-br from-amber-200/40 to-amber-100/40 rounded-2xl -z-10 group-hover:scale-105 transition-transform duration-500" />
                         <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                            <img src='src/assets/DasBinIch.jpg'
+                            <img src={aboutMePic}
                                  alt="Marlene Scheer - Ihre Schneiderin"
                                  className="w-full h-full object-cover object-center" />
                         </div>

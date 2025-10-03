@@ -1,13 +1,17 @@
 import {ChevronLeft, ChevronRight, Crown} from "lucide-react";
 import {useEffect, useState} from "react";
+import carousell1 from '../assets/Carousell1.jpg';
+import carousell2 from '../assets/Carousell2.jpg';
+import carousell3 from '../assets/Carousell3.jpg';
+import carousell4 from '../assets/Carousell4.jpg';
 
 const HeroSection = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [
-        { url: 'src/assets/Carousell1.jpg', alt: 'Elegante Mode' },
-        { url: 'src/assets/Carousell2.jpg', alt: 'Stoffauswahl' },
-        { url: 'src/assets/Carousell3.jpg', alt: 'Handarbeit' },
-        { url: 'src/assets/Carousell4.jpg', alt: 'Maßanfertigung' }
+        { url: carousell1, alt: 'Elegante Mode' },
+        { url: carousell2, alt: 'Stoffauswahl' },
+        { url: carousell3, alt: 'Handarbeit' },
+        { url: carousell4, alt: 'Maßanfertigung' }
     ];
 
     useEffect(() => {
@@ -72,5 +76,4 @@ const HeroSection = () => {
     );
 };
 
-
-export default HeroSection
+export default HeroSection;
