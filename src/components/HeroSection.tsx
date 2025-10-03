@@ -4,10 +4,10 @@ import {useEffect, useState} from "react";
 const HeroSection = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [
-        { url: 'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=1600', alt: 'Elegante Mode' },
-        { url: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1600', alt: 'Stoffauswahl' },
-        { url: 'https://images.unsplash.com/photo-1517635676447-3a480fbfd8f2?w=1600', alt: 'Handarbeit' },
-        { url: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1600', alt: 'Maßanfertigung' }
+        { url: 'src/assets/Carousell1.jpg', alt: 'Elegante Mode' },
+        { url: 'src/assets/Carousell2.jpg', alt: 'Stoffauswahl' },
+        { url: 'src/assets/Carousell3.jpg', alt: 'Handarbeit' },
+        { url: 'src/assets/Carousell4.jpg', alt: 'Maßanfertigung' }
     ];
 
     useEffect(() => {

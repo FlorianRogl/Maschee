@@ -1,12 +1,12 @@
 // Gallery Section
 const GallerySection = () => {
     const products = [
-        { img: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800', title: 'Elegante Abendmode', category: 'Maßanfertigung' },
-        { img: 'https://images.unsplash.com/photo-1539008835657-9e8e9680c44a?w=800', title: 'Brautkleid Kollektion', category: 'Hochzeit' },
-        { img: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800', title: 'Business Eleganz', category: 'Business' },
-        { img: 'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=800', title: 'Sommer Kollektion', category: 'Kollektion' },
-        { img: 'https://images.unsplash.com/photo-1558769132-92e717d613cd?w=800', title: 'Vintage Redesign', category: 'Upcycling' },
-        { img: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800', title: 'Festliche Tracht', category: 'Tradition' }
+        { img: 'src/assets/Kollektion1.jpg', title: 'Elegante Abendmode', category: 'Maßanfertigung' },
+        { img: 'src/assets/Kollektion2.jpg', title: 'Brautkleid Kollektion', category: 'Hochzeit' },
+        { img: 'src/assets/Kollektion3.jpg', title: 'Business Eleganz', category: 'Business' },
+        { img: 'src/assets/Kollektion4.jpg', title: 'Sommer Kollektion', category: 'Kollektion' },
+        { img: 'src/assets/Kollektion5.jpg', title: 'Vintage Redesign', category: 'Upcycling' },
+        { img: 'src/assets/Kollektion6.jpg', title: 'Festliche Tracht', category: 'Tradition' }
     ];
 
     return (

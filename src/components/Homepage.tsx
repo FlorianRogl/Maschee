@@ -5,6 +5,8 @@ import ServicesSection from "./ServiceSection.tsx";
 import ContactSection from "./ContactSection.tsx";
 import Footer from "./Footer.tsx";
 import AboutSection from "./AboutSection.tsx";
+import TestimonialsSection from "./TestemonialSection.tsx";
+import PhilosophySection from "./PhilosophySection.tsx";
 
 const Homepage = () => {
     return (
@@ -21,8 +23,10 @@ const Homepage = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
+            <PhilosophySection />
             <ServicesSection />
             <GallerySection />
+            <TestimonialsSection />
             <ContactSection />
             <Footer />
         </div>

@@ -8,7 +8,7 @@ const AboutSection = () => {
                     <div className="relative group order-2 md:order-1">
                         <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-full h-full bg-gradient-to-br from-amber-200/40 to-amber-100/40 rounded-2xl -z-10 group-hover:scale-105 transition-transform duration-500" />
                         <div className="aspect-w-4 aspect-h-5 rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1594738739800-ce5b71ad5d15?w=800"
+                            <img src='src/assets/DasBinIch.jpg'
                                  alt="Marlene Scheer - Ihre Schneiderin"
                                  className="w-full h-full object-cover object-center" />
                         </div>
