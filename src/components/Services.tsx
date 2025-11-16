@@ -1,39 +1,47 @@
+// Import real images from assets
+import galleryPatchwork from '../assets/gallery-patchwork.jpg';
+import galleryFeltArt from '../assets/gallery-felt-art.jpg';
+import galleryLeather from '../assets/gallery-leather.jpg';
+import kollektion4 from '../assets/Kollektion4.jpg';
+import carousell4 from '../assets/Carousell4.jpg';
+import galleryDetail from '../assets/gallery-detail.jpg';
+
 export default function Services() {
     const works = [
         {
             title: 'Kunstobjekte',
             description: 'Textile Kunstwerke, die durch ihre Einzigartigkeit und künstlerische Gestaltung beeindrucken. Jedes Objekt ein Statement aus Stoff und Form.',
-            image: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=800&auto=format&fit=crop',
+            image: kollektion4,
             color: 'from-[#D4A418] to-[#B8900F]'
         },
         {
             title: 'Filzobjekte',
             description: 'Vom traditionellen Handwerk zur modernen Kunst. Dreidimensionale Filzkreationen mit besonderem Charakter und einzigartiger Haptik.',
-            image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop',
+            image: galleryFeltArt,
             color: 'from-[#704214] to-[#5A3410]'
         },
         {
             title: 'Leder-Arbeiten',
             description: 'Hochwertige Leder-Objekte und Accessoires, gefertigt mit präziser Handarbeit und Gespür für Material und Form.',
-            image: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800&auto=format&fit=crop',
+            image: galleryLeather,
             color: 'from-[#D4A418] to-[#B8900F]'
         },
         {
             title: 'Patchwork',
             description: 'Meisterhafte Zusammenstellung von Stoffen und Mustern. Traditionelle Techniken treffen auf zeitgenössisches Design.',
-            image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?q=80&w=800&auto=format&fit=crop',
+            image: galleryPatchwork,
             color: 'from-[#704214] to-[#5A3410]'
         },
         {
             title: 'Accessoires',
             description: 'Ponchos, Bindegürtel und textile Begleiter – individuell gestaltet und mit Liebe zum Detail gefertigt.',
-            image: 'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=800&auto=format&fit=crop',
+            image: carousell4,
             color: 'from-[#D4A418] to-[#B8900F]'
         },
         {
             title: 'Kunstmotive',
             description: 'Individuell bemalte Objekte mit künstlerischen Motiven. Textile Leinwände für persönliche Ausdrucksformen.',
-            image: 'https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=800&auto=format&fit=crop',
+            image: galleryDetail,
             color: 'from-[#704214] to-[#5A3410]'
         }
     ];

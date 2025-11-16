@@ -2,47 +2,42 @@ import { useState } from 'react';
 
 // Import all gallery images - using correct file names
 import carousell1 from '../assets/Carousell1.jpg';
-import carousell2 from '../assets/Carousell2.jpg';
+
 import carousell3 from '../assets/Carousell3.jpg';
 import galleryAtelier from '../assets/gallery-atelier.jpg';
 import galleryDetail from '../assets/gallery-detail.jpg';
-import galleryFeltArt from '../assets/gallery-felt-art.jpg';
-import galleryLeather from '../assets/gallery-leather.jpg';
+
 import galleryPatchwork from '../assets/gallery-patchwork.jpg';
 import galleryWallArt from '../assets/gallery-wall-art.jpg';
-import heroTextileArt from '../assets/hero-textile-art.jpg';
-import kollektion3 from '../assets/Kollektion3.jpg';
+
 import kollektion4 from '../assets/Kollektion4.jpg';
-import kollektion5 from '../assets/Kollektion5.jpg';
+
 import kollektion6 from '../assets/Kollektion6.jpg';
 
 interface GalleryItem {
     title: string;
     category: string;
-    size: 'large' | 'medium';
     image: string;
     description: string;
     materials: string;
     year: string;
 }
 
-export default function Gallery() {
+export default function Gallery2() {
     const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
 
     const portfolioItems: GalleryItem[] = [
         {
-            title: 'Textile Wandkunst',
-            category: 'Raumkunst',
-            size: 'large',
-            image: heroTextileArt,
-            description: 'Großformatige textile Installation mit abstrakten organischen Formen in warmen Erdtönen. Die fließenden Linien und natürlichen Farbverläufe schaffen eine beruhigende Atmosphäre.',
-            materials: 'Baumwolle, Leinen, Naturfarben',
+            title: 'Geometrisches Patchwork',
+            category: 'Textilkunst',
+            image: galleryPatchwork,
+            description: 'Moderne Interpretation traditioneller Patchwork-Techniken. Die geometrischen Formen und harmonischen Farben schaffen ein zeitloses Design.',
+            materials: 'Baumwolle, Leinen, Seide',
             year: '2024'
         },
         {
             title: 'Patchwork Tasche',
             category: 'Unikat',
-            size: 'medium',
             image: carousell1,
             description: 'Handgefertigte Tasche aus verschiedenen Vintage-Stoffen mit floralen Mustern und königlichen Motiven. Jedes Element wurde sorgfältig ausgewählt und von Hand vernäht.',
             materials: 'Vintage-Stoffe, Leder, Metall',
@@ -51,112 +46,51 @@ export default function Gallery() {
         {
             title: 'Atelier Impression',
             category: 'Einblick',
-            size: 'medium',
             image: galleryAtelier,
             description: 'Ein Blick in unser Atelier in St. Georgen. Hier entstehen alle unsere Kunstwerke in liebevoller Handarbeit mit traditionellen Techniken.',
             materials: 'Verschiedene Materialien',
             year: '2024'
         },
         {
-            title: 'Geometrisches Patchwork',
-            category: 'Textilkunst',
-            size: 'large',
-            image: galleryPatchwork,
-            description: 'Moderne Interpretation traditioneller Patchwork-Techniken. Die geometrischen Formen und harmonischen Farben schaffen ein zeitloses Design.',
-            materials: 'Baumwolle, Leinen, Seide',
-            year: '2024'
-        },
-        {
-            title: 'Kollektion Sommer',
-            category: 'Mode',
-            size: 'medium',
-            image: kollektion4,
-            description: 'Leichte Sommerkollektion mit geometrischen Mustern und natürlichen Farben. Perfekt für warme Tage mit einem Hauch von Eleganz.',
-            materials: 'Baumwolle, Viskose',
-            year: '2024'
-        },
-        {
-            title: 'Farbenfrohe Tasche',
-            category: 'Accessoire',
-            size: 'medium',
-            image: carousell3,
-            description: 'Moderne Patchwork-Tasche in leuchtenden Farben. Die Kombination verschiedener Lederqualitäten verleiht jedem Stück einen individuellen Charakter.',
-            materials: 'Leder, Baumwolle',
-            year: '2024'
-        },
-        {
-            title: 'Goldene Stickerei',
-            category: 'Kunsthandwerk',
-            size: 'medium',
-            image: galleryDetail,
-            description: 'Detailaufnahme einer handgestickten Blume mit goldenen Fäden. Die filigrane Arbeit zeigt die Präzision traditioneller Sticktechniken.',
-            materials: 'Goldgarn, Baumwolle',
-            year: '2024'
-        },
-        {
-            title: 'Filzkunst',
-            category: 'Kunstobjekt',
-            size: 'medium',
-            image: galleryFeltArt,
-            description: 'Dreidimensionale Filzobjekte in natürlichen Farbtönen. Die organischen Formen entstehen durch traditionelle Nassfilztechniken.',
-            materials: 'Schurwolle, Naturseife',
-            year: '2024'
-        },
-        {
-            title: 'Leder Accessoire',
-            category: 'Handwerk',
-            size: 'medium',
-            image: galleryLeather,
-            description: 'Handgefertigte Ledertasche mit natürlicher Patina. Die sorgfältige Verarbeitung und hochwertige Materialien garantieren Langlebigkeit.',
-            materials: 'Rindsleder, Messingbeschläge',
-            year: '2024'
-        },
-        {
             title: 'Wandgestaltung',
             category: 'Installation',
-            size: 'large',
             image: galleryWallArt,
             description: 'Textile Wandgestaltung für besondere Räume. Die Kombination verschiedener Texturen und Farben schafft eine einzigartige Atmosphäre.',
             materials: 'Mixed Media, Textilien',
             year: '2023'
         },
         {
-            title: 'Schmuckset Rosa',
-            category: 'Schmuck',
-            size: 'medium',
-            image: kollektion5,
-            description: 'Handgefertigtes Schmuckset in zartem Rosa. Die schlichte Eleganz macht diese Stücke zu perfekten Begleitern für jeden Anlass.',
-            materials: 'Silber, Halbedelsteine',
+            title: 'Kollektion Sommer',
+            category: 'Mode',
+            image: kollektion4,
+            description: 'Leichte Sommerkollektion mit geometrischen Mustern und natürlichen Farben. Perfekt für warme Tage mit einem Hauch von Eleganz.',
+            materials: 'Baumwolle, Viskose',
+            year: '2024'
+        },
+        {
+            title: 'Goldene Stickerei',
+            category: 'Kunsthandwerk',
+            image: galleryDetail,
+            description: 'Detailaufnahme einer handgestickten Blume mit goldenen Fäden. Die filigrane Arbeit zeigt die Präzision traditioneller Sticktechniken.',
+            materials: 'Goldgarn, Baumwolle',
+            year: '2024'
+        },
+        {
+            title: 'Farbenfrohe Tasche',
+            category: 'Accessoire',
+            image: carousell3,
+            description: 'Moderne Patchwork-Tasche in leuchtenden Farben. Die Kombination verschiedener Lederqualitäten verleiht jedem Stück einen individuellen Charakter.',
+            materials: 'Leder, Baumwolle',
             year: '2024'
         },
         {
             title: 'Sommerkleid Grün',
             category: 'Mode',
-            size: 'medium',
             image: kollektion6,
             description: 'Leichtes Sommerkleid mit floralen Mustern in frischen Grüntönen. Die fließende Form und natürlichen Materialien bieten optimalen Tragekomfort.',
             materials: 'Bio-Baumwolle, Leinen',
             year: '2024'
-        },
-        {
-            title: 'Netzmütze',
-            category: 'Kopfbedeckung',
-            size: 'medium',
-            image: carousell2,
-            description: 'Handgehäkelte Netzmütze in klassischem Design. Die kunstvolle Verarbeitung macht jedes Stück zu einem einzigartigen Accessoire.',
-            materials: 'Baumwollgarn',
-            year: '2024'
-        },
-
-        {
-            title: 'Kleid Orange',
-            category: 'Mode',
-            size: 'medium',
-            image: kollektion3,
-            description: 'Sommerkleid in warmen Orangetönen mit geometrischen Mustern. Die lebendigen Farben und der bequeme Schnitt machen es zum perfekten Sommerbegleiter.',
-            materials: 'Baumwolle, Elasthan',
-            year: '2024'}
-
+        }
     ];
 
     return (
@@ -177,14 +111,13 @@ export default function Gallery() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* Clean Grid Layout - gleichmäßige Karten */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {portfolioItems.map((item, index) => (
                             <div
                                 key={index}
                                 onClick={() => setSelectedItem(item)}
-                                className={`relative overflow-hidden cursor-pointer group rounded-xl ${
-                                    item.size === 'large' ? 'md:col-span-2 aspect-[16/9]' : 'aspect-[4/5]'
-                                }`}
+                                className="relative overflow-hidden cursor-pointer group rounded-xl aspect-square"
                             >
                                 <img
                                     src={item.image}
@@ -197,7 +130,7 @@ export default function Gallery() {
                                     <span className="block text-xs tracking-wider uppercase text-[#D4A418] mb-2">
                                         {item.category}
                                     </span>
-                                    <h3 className="font-serif text-xl md:text-2xl mb-2">
+                                    <h3 className="font-serif text-xl md:text-2xl mb-2 text-white">
                                         {item.title}
                                     </h3>
                                     <div className="flex items-center text-sm text-white/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

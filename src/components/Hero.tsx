@@ -1,10 +1,13 @@
+import heroTextileArt from '../assets/hero-textile-art.jpg';
+
+
 export default function Hero() {
     return (
         <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2400&auto=format&fit=crop"
+                    src={heroTextileArt}
                     alt="Textile Handwerkskunst"
                     className="w-full h-full object-cover"
                 />

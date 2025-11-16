@@ -1,3 +1,6 @@
+import dasbinich from '../assets/DASBINICH_zusammengeschnitten.png';
+
+
 export default function About() {
     return (
         <section id="about" className="relative py-32 bg-white">
@@ -19,7 +22,7 @@ export default function About() {
                     <div className="relative">
                         <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200&auto=format&fit=crop"
+                                src={dasbinich}
                                 alt="Martina Scheer bei der Arbeit"
                                 className="w-full h-[600px] object-cover"
                             />

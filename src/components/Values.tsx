@@ -1,10 +1,16 @@
+// Import real images from assets
+import galleryDetail from '../assets/gallery-detail.jpg';
+import galleryPatchwork from '../assets/gallery-patchwork.jpg';
+import galleryWallArt from '../assets/gallery-wall-art.jpg';
+import carousell2 from '../assets/gallery-leather.jpg';
+
 export default function Values() {
     const values = [
         {
             number: '01',
             title: 'Einzigartigkeit',
             text: 'Kein Stück gleicht dem anderen. Jedes Werk ist ein Original, geprägt von individueller Handschrift und künstlerischer Vision.',
-            image: 'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=600&auto=format&fit=crop',
+            image: galleryDetail,
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -15,7 +21,7 @@ export default function Values() {
             number: '02',
             title: 'Handarbeit',
             text: 'Echtes Handwerk statt Massenproduktion. Spürbare Qualität, die von Generation zu Generation weitergegeben wird.',
-            image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=600&auto=format&fit=crop',
+            image: carousell2,
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
@@ -26,7 +32,7 @@ export default function Values() {
             number: '03',
             title: 'Liebe zum Detail',
             text: 'Jeder Stich, jede Naht wird mit größter Sorgfalt ausgeführt. Perfektion liegt in den kleinen Dingen.',
-            image: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=600&auto=format&fit=crop',
+            image: galleryPatchwork,
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -38,7 +44,7 @@ export default function Values() {
             number: '04',
             title: 'Nachhaltigkeit',
             text: 'Zeitlose Qualität statt schnelllebiger Trends. Objekte, die überdauern und Geschichten erzählen.',
-            image: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?q=80&w=600&auto=format&fit=crop',
+            image: galleryWallArt,
             icon: (
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -66,7 +72,7 @@ export default function Values() {
                     {values.map((value, index) => (
                         <div
                             key={index}
-                            className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+                            className="group relative bg-white rounded-2xl overflow-hidden shadow-lg transition-shadow duration-500"
                         >
                             <div className="flex flex-col md:flex-row">
                                 {/* Image Side */}
@@ -74,7 +80,7 @@ export default function Values() {
                                     <img
                                         src={value.image}
                                         alt={value.title}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10"></div>
                                 </div>
@@ -87,7 +93,7 @@ export default function Values() {
                                     </div>
 
                                     {/* Icon */}
-                                    <div className="w-14 h-14 bg-gradient-to-br from-[#D4A418] to-[#B8900F] rounded-xl flex items-center justify-center text-white mb-6 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                                    <div className="w-14 h-14 bg-gradient-to-br from-[#D4A418] to-[#B8900F] rounded-xl flex items-center justify-center text-white mb-6">
                                         {value.icon}
                                     </div>
 

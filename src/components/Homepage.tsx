@@ -4,9 +4,9 @@ import Atelier from './Atelier';
 import About from './About';
 import Services from './Services';
 import Values from './Values';
-import Gallery from './Gallery';
 import Contact from './Contact';
 import Footer from './Footer';
+import Gallerie2 from './Gallerie2.tsx'
 
 export default function Homepage() {
     return (
@@ -17,7 +17,7 @@ export default function Homepage() {
             <About />
             <Services />
             <Values />
-            <Gallery />
+            <Gallerie2 />
             <Contact />
             <Footer />
         </div>

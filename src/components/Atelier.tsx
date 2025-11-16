@@ -1,3 +1,5 @@
+import galleryAtelier from '../assets/gallery-atelier.jpg';
+
 export default function Atelier() {
     return (
         <section id="atelier" className="relative py-32 bg-gradient-to-b from-white to-[#FDF8F0]">
@@ -21,7 +23,7 @@ export default function Atelier() {
                 <div className="relative group mb-16">
                     <div className="relative h-[600px] overflow-hidden rounded-2xl shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=2400&auto=format&fit=crop"
+                            src={galleryAtelier}
                             alt="MaSchee Atelier in St. Georgen"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
@@ -29,7 +31,7 @@ export default function Atelier() {
 
                         {/* Overlay Text */}
                         <div className="absolute bottom-0 left-0 right-0 p-12 text-white">
-                            <h3 className="font-serif text-3xl mb-3">Unser Atelier in St. Georgen</h3>
+                            <h3 className="font-serif text-3xl mb-3 text-white">Unser Atelier in St. Georgen</h3>
                             <p className="text-white/90 text-lg max-w-2xl">
                                 Hier werden Ideen zu einzigartigen Kunstwerken. Jeder Raum atmet
                                 Kreativität, jede Ecke inspiriert zu neuen Kreationen.
